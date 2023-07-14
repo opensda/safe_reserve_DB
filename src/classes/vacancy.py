@@ -1,3 +1,5 @@
+from pprint import pprint
+
 from hh import HH
 
 
@@ -13,11 +15,10 @@ class Vacancy:
         self.requirement = requirement
 
         Vacancy.All_vacancies.append(self)
-
-
-def __str__(self):
-    return f'{Vacancy.All_vacancies}'
-    # return f'{self.name}, {self.url}, {self.pay}, {self.requirement}'
+    def __str__(self):
+        return f'{self.name}'
+    def __repr__(self):
+        return f"{self.__class__.__name__}('{self.name}', {self.url}, {self.pay})"
 
 
 
@@ -37,3 +38,5 @@ for x in range(len(Vacancy.data)):
         pay = f'{salary_from} - {salary_to}'
 
     vacancy = Vacancy(name, url, pay, requirement)
+
+

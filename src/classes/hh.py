@@ -22,8 +22,9 @@ class HH(JobPlatform):
             self.params = {
             'text': vacancy,
             'area': 1,
-            'pages': page,
-            'per_page': 2}
+            'pages': 20,
+            'page': page,
+            'per_page': 3}
             self.response = requests.get('https://api.hh.ru/vacancies', self.params)
             self.response_json = self.response.json()
             return self.response_json
