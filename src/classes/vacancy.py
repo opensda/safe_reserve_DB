@@ -3,27 +3,37 @@ from hh import HH
 
 class Vacancy:
     All_vacancies = []
+    hh = HH()
+    data = hh.get_vacancies('Python')
 
-    def __init__(self, name=None, url=None, pay=None, requirement=None):
-        hh = HH()
-        data = hh.get_vacancies('Python')
-        for x in range(len(data[0]['items'])):
-            self.name = data[0]['items'][x]['name']
-            self.url = data[0]['items'][x]['alternate_url']
-            self.requirement = data[0]['items'][x]['snippet']['requirement']
-            if data[0]['items'][x]['salary'] == None:
-                self.pay = None
-            else:
-                salary_from = data[0]['items'][x]['salary']['from']
-                salary_to = data[0]['items'][x]['salary']['to']
-                self.pay = f'{salary_from} - {salary_to}'
-            Vacancy.All_vacancies.append(self)
+    def __init__(self, name, url, pay, requirement):
+        self.name = name
+        self.url = url
+        self.pay = pay
+        self.requirement = requirement
 
-    def __str__(self):
-        return f'{Vacancy.All_vacancies}'
-        # return f'{self.name}, {self.url}, {self.pay}, {self.requirement}'
+        Vacancy.All_vacancies.append(self)
 
 
-vacancy = Vacancy()
-print(str(Vacancy.All_vacancies[0].name))
-print(str(Vacancy.All_vacancies[1].name))
+def __str__(self):
+    return f'{Vacancy.All_vacancies}'
+    # return f'{self.name}, {self.url}, {self.pay}, {self.requirement}'
+
+
+
+
+
+
+
+for x in range(len(Vacancy.data)):
+    name = Vacancy.data[x]['name']
+    url = Vacancy.data[x]['alternate_url']
+    requirement = Vacancy.data[x]['snippet']['requirement']
+    if Vacancy.data[x]['salary'] == None:
+        pay = None
+    else:
+        salary_from = Vacancy.data[x]['salary']['from']
+        salary_to = Vacancy.data[x]['salary']['to']
+        pay = f'{salary_from} - {salary_to}'
+
+    vacancy = Vacancy(name, url, pay, requirement)
