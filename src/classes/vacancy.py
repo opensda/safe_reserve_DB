@@ -1,14 +1,14 @@
 from pprint import pprint
 
-from hh import HH
+from src.classes.hh import HH
 
 
 class Vacancy:
     All_vacancies = []
-    hh = HH()
-    data = hh.get_vacancies('Python')
+    # hh = HH()
+    # data = hh.get_vacancies('Python')
 
-    def __init__(self, name, url, pay, requirement):
+    def __init__(self, name, pay, requirement, url=None):
         self.name = name
         self.url = url
         self.pay = pay
@@ -26,17 +26,17 @@ class Vacancy:
 
 
 
-for x in range(len(Vacancy.data)):
-    name = Vacancy.data[x]['name']
-    url = Vacancy.data[x]['alternate_url']
-    requirement = Vacancy.data[x]['snippet']['requirement']
-    if Vacancy.data[x]['salary'] == None:
-        pay = None
-    else:
-        salary_from = Vacancy.data[x]['salary']['from']
-        salary_to = Vacancy.data[x]['salary']['to']
-        pay = f'{salary_from} - {salary_to}'
-
-    vacancy = Vacancy(name, url, pay, requirement)
+# for x in range(len(Vacancy.data)):
+#     name = Vacancy.data[x]['name']
+#     url = Vacancy.data[x]['alternate_url']
+#     requirement = Vacancy.data[x]['snippet']['requirement']
+#     if Vacancy.data[x]['salary'] == None:
+#         pay = None
+#     else:
+#         salary_from = Vacancy.data[x]['salary']['from']
+#         salary_to = Vacancy.data[x]['salary']['to']
+#         pay = f'{salary_from} - {salary_to}'
+#
+#     vacancy = Vacancy(name, url, pay, requirement)
 
 

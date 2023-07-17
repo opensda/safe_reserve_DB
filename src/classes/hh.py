@@ -36,3 +36,5 @@ class HH(JobPlatform):
             print(f'Количество объектов равно {len(self.data_store)}')
         return self.data_store
 
+
+
