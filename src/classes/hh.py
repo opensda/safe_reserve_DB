@@ -24,13 +24,13 @@ class HH(JobPlatform):
             'area': 1,
             'pages': 20,
             'page': page,
-            'per_page': 3}
+            'per_page': 50}
             self.response = requests.get('https://api.hh.ru/vacancies', self.params)
             self.response_json = self.response.json()
             return self.response_json
 
         self.data_store = []
-        for page in range(0, 3):
+        for page in range(0, 10):
             self.content = get_data(page)
             self.data_store.extend(self.content['items'])
             print(f'Количество объектов равно {len(self.data_store)}')

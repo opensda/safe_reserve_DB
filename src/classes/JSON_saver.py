@@ -7,9 +7,12 @@ class JSON_Saver:
 
 
     def save_to_JSON(self, data):
-        with open(f'{self.filename}.json', 'w') as file:
-            sep_data = data[0]
-            json.dump(sep_data, file, indent=2, ensure_ascii=False)
+        with open(f'{self.filename}.json', 'w', encoding='utf-8') as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
+
+
+    # def save_to_txt(self, data):
+    #     formatted_json = json.dumps(data, indent=4, ensure_ascii=False)
 
 
 
