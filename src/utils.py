@@ -69,3 +69,17 @@ def get_vac_by_exp(vacancies, experience):
     return vac_srt_by_exp
 
 
+def get_city_id(cities, name):
+    for city in cities:
+        if city.get('name') == name:
+            return city.get('id')
+        elif city.get('areas'):
+            city_id = get_city_id(city.get('areas'), name)
+            if city_id is not None:
+                return city_id
+
+    return None
+
+
+
+
