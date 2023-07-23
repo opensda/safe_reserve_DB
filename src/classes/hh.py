@@ -17,7 +17,7 @@ class HH(JobPlatform):
     def __init__(self):
         pass
 
-    def get_data(self, vacancy):
+    def get_vacancies(self, vacancy):
         def get_data(page=0):
             self.params = {
             'text': vacancy,
@@ -33,7 +33,7 @@ class HH(JobPlatform):
         for page in range(0, 2):
             self.content = get_data(page)
             self.data_store.extend(self.content['items'])
-            print(f'Количество объектов равно {len(self.data_store)}')
+            print(f'Количество объектов равно {len(self.data_store)} (hh.ru)')
         return self.data_store
 
     def get_clear_vacancies(self, vacancies, key_word):

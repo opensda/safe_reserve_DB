@@ -20,6 +20,14 @@ class Vacancy:
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.name}', {self.url}, {self.pay})"
 
+    def to_json(self):
+        return {
+            "name": self.name,
+            "url": self.url,
+            "pay": self.pay,
+            "requirement": self.requirement,}
+
+
 
 
 
