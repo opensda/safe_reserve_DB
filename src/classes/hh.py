@@ -17,11 +17,11 @@ class HH(JobPlatform):
     def __init__(self):
         pass
 
-    def get_vacancies(self, vacancy):
+    def get_vacancies(self, vacancy, area_id):
         def get_data(page=0):
             self.params = {
             'text': vacancy,
-            'area': 1,
+            'area': area_id,
             'pages': 20,
             'page': page,
             'per_page': 100}
@@ -36,21 +36,21 @@ class HH(JobPlatform):
             print(f'Количество объектов равно {len(self.data_store)} (hh.ru)')
         return self.data_store
 
-    def get_clear_vacancies(self, vacancies, key_word):
-        clear_vacancies = []
+    def get_clarified_vacancies(self, vacancies, key_word):
+        clarified_vacancies = []
         for vac in vacancies:
             if key_word in vac['name'] or key_word.lower() in vac['name']:
-                clear_vacancies.append(vac)
+                clarified_vacancies.append(vac)
             elif vac['snippet']['requirement'] == None:
                 continue
             elif key_word in vac['snippet']['requirement'] or key_word.lower() in vac['snippet']['requirement']:
-                clear_vacancies.append(vac)
+                clarified_vacancies.append(vac)
             elif vac['employer']['name'] == None:
                 continue
             elif key_word in vac['employer']['name'] or key_word.lower() in vac['employer']['name']:
-                clear_vacancies.append(vac)
+                clarified_vacancies.append(vac)
 
-        return clear_vacancies
+        return clarified_vacancies
 
 
 

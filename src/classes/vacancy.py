@@ -25,7 +25,10 @@ class Vacancy:
             "name": self.name,
             "url": self.url,
             "pay": self.pay,
-            "requirement": self.requirement,}
+            "requirement": self.requirement}
+
+    def __gt__(self, other):
+        return self.pay > other.pay
 
 
 
