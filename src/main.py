@@ -1,15 +1,18 @@
 from src.classes.hh import HH
+from src.classes.superjob import SuperJob
+
 from src.classes.JSON_saver import JSON_Saver
 
-import json
-
-from src.classes.superjob import SuperJob
 from src.utils import load_data_hh_obj, get_sorted_by_pay, load_data_sj_obj
 
-VACANCIES_COUNTER = 0
+
 
 if __name__ == '__main__':
-    user_platfom_choice = int(input('С какой платорфмы Вы хотите получить'
+
+    # Счетчик вакансий, которые выводятся в консоль
+    VACANCIES_COUNTER = 0
+
+    user_platfom_choice = int(input('С какой платорфмы Вы хотите получить '
                                     'вакансии ?\n'
                                     'нажмите 1 - получите вакансии с hh.ru\n'
                                     'нажмите 2 - получите вакансии с superjob.ru\n'
@@ -45,24 +48,40 @@ if __name__ == '__main__':
 
     if source_choice == 'hh':
         hh = HH()
+
+        # получаем вакансии по ключевому слову и id города
         vacancies = hh.get_vacancies(key_word,hh_city_id)
-        clarified_vacancies = hh.get_clarified_vacancies(vacancies, key_word)
-        data_to_record = load_data_hh_obj(clarified_vacancies)
+
+        # Преобразуем данные для записи в json файл
+        data_to_record = load_data_hh_obj(vacancies)
+
+
         js_obj = JSON_Saver(filename)
+
+        # Записываем данные в json файл
         js_obj.save_to_JSON(data_to_record)
+
+        # Получаем список отсортированных по зарплате вакансий
         sorted_vac = get_sorted_by_pay(f'{filename}.json', sorted_num)
 
 
 
     elif source_choice == 'sj':
         superjob = SuperJob()
+
+        # получаем вакансии по ключевому слову и названию города
         vacancies = superjob.get_vacancies(key_word, chosen_city)
+
+        # Далее аналогично
+
         data_to_record = load_data_sj_obj(vacancies)
         js_obj = JSON_Saver(filename)
         js_obj.save_to_JSON(data_to_record)
         sorted_vac = get_sorted_by_pay(f'{filename}.json', sorted_num)
 
-    print(len(sorted_vac))
+
+    # Выводим пользователю информацию в соответствии с запросом
+
     for vac in sorted_vac:
         VACANCIES_COUNTER += 1
         print(f'Позиция вакансии в поиске: {VACANCIES_COUNTER}')
@@ -70,6 +89,12 @@ if __name__ == '__main__':
         print(f'Ссылка на вакансию: {vac["url"]}')
         print(f'Заработная плата: {vac["pay"]}')
         print(f'Требования: {vac["requirement"]}\n\n')
+
+
+    # Если пользователь ввел некорректные данные - просим перепроверить корректность введенных данных
+
+    if len(sorted_vac) == 0:
+        print('Если тут не появились данные о вакансиях, то проверьте корректность введенного запроса')
 
 
 

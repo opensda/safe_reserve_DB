@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from pprint import pprint
+
 
 import requests
 
@@ -13,14 +13,32 @@ class JobPlatform(ABC):
 
 
 class HH(JobPlatform):
+    """
+    Класс позволяет собирать информацию о вакансиях с платформы hh.ru
+    """
 
-    def __init__(self):
-        pass
+    def __init__(self, name='hh'):
+        self.name = name
 
-    def get_vacancies(self, vacancy, area_id):
+
+    def get_vacancies(self, key_word: str, area_id: int):
+        """
+        Получаем вакансии с hh.ru с заданными параметрами
+        :param key_word: ключевое слово для поискового запроса
+        :param area_id: id города
+        :return: список словарей с вакансиями
+        """
         def get_data(page=0):
+            """
+            Внутрення функция - парсим данные о вакансиях постранично
+            :param page: номер страницы
+            """
+
+            # Делаем get запрос с необходимыми параметрами
+            # и получаем данные в json формате
+
             self.params = {
-            'text': vacancy,
+            'text': key_word,
             'area': area_id,
             'pages': 20,
             'page': page,
@@ -30,27 +48,15 @@ class HH(JobPlatform):
             return self.response_json
 
         self.data_store = []
-        for page in range(0, 2):
+        for page in range(0, 10):
             self.content = get_data(page)
             self.data_store.extend(self.content['items'])
-            print(f'Количество объектов равно {len(self.data_store)} (hh.ru)')
+            print(f'Загружаются данные с hh.ru: 100 вакансий загружено')
+
+
         return self.data_store
 
-    def get_clarified_vacancies(self, vacancies, key_word):
-        clarified_vacancies = []
-        for vac in vacancies:
-            if key_word in vac['name'] or key_word.lower() in vac['name']:
-                clarified_vacancies.append(vac)
-            elif vac['snippet']['requirement'] == None:
-                continue
-            elif key_word in vac['snippet']['requirement'] or key_word.lower() in vac['snippet']['requirement']:
-                clarified_vacancies.append(vac)
-            elif vac['employer']['name'] == None:
-                continue
-            elif key_word in vac['employer']['name'] or key_word.lower() in vac['employer']['name']:
-                clarified_vacancies.append(vac)
 
-        return clarified_vacancies
 
 
 

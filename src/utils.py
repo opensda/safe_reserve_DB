@@ -3,7 +3,13 @@ import json
 from src.classes.vacancy import Vacancy
 
 
-def get_sorted_by_pay(filename, sorted_num):
+def get_sorted_by_pay(filename: str, sorted_num: int):
+    """
+    Сортируем вакансии по ЗП
+    :param filename: имя json файла с вакансиями
+    :param sorted_num: количество отсортированных вакансий
+    :return: список словарей, отсортированный по ЗП
+    """
     with open(filename, encoding='utf-8') as file:
         content = json.load(file)
     vac_with_pay = []
@@ -24,6 +30,11 @@ def get_sorted_by_pay(filename, sorted_num):
 
 
 def load_data_hh_obj(clear_data):
+    """
+    Заагружаем данные о вакансиях с hh.ru в объекты класса Vacanvy
+    :param clear_data: список словарей с вакансиями
+    :return: список словарей с атрибутами объекта класса Vacancy
+    """
     data_js_obj = []
     for x in range(len(clear_data)):
         name = clear_data[x]['name']
@@ -41,6 +52,11 @@ def load_data_hh_obj(clear_data):
 
 
 def load_data_sj_obj(data):
+    """
+    Заагружаем данные о вакансиях с superjob.ru.ru в объекты класса Vacanvy
+    :param clear_data: список словарей с вакансиями
+    :return: список словарей с атрибутами объекта класса Vacancy
+    """
     data_js_obj = []
     for x in range(len(data)):
         for i in range(len(data[x]['objects'])):
