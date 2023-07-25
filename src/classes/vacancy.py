@@ -1,29 +1,59 @@
-from hh import HH
-
 
 class Vacancy:
     All_vacancies = []
 
-    def __init__(self, name=None, url=None, pay=None, requirement=None):
-        hh = HH()
-        data = hh.get_vacancies('Python')
-        for x in range(len(data[0]['items'])):
-            self.name = data[0]['items'][x]['name']
-            self.url = data[0]['items'][x]['alternate_url']
-            self.requirement = data[0]['items'][x]['snippet']['requirement']
-            if data[0]['items'][x]['salary'] == None:
-                self.pay = None
-            else:
-                salary_from = data[0]['items'][x]['salary']['from']
-                salary_to = data[0]['items'][x]['salary']['to']
-                self.pay = f'{salary_from} - {salary_to}'
-            Vacancy.All_vacancies.append(self)
+    def __init__(self, name: str, pay: int, requirement: str, url=None):
+        self._name = name
+        self._url = url
+        self._pay = pay
+        self._requirement = requirement
+
+        Vacancy.All_vacancies.append(self)
+
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def url(self):
+        return self._url
+
+    @property
+    def pay(self):
+        return self._pay
+
+    @property
+    def requirement(self):
+        return self._requirement
 
     def __str__(self):
-        return f'{Vacancy.All_vacancies}'
-        # return f'{self.name}, {self.url}, {self.pay}, {self.requirement}'
+        return f'{self.name}'
+    def __repr__(self):
+        return f"{self.__class__.__name__}('{self.name}', {self.url}, {self.pay})"
+
+    def to_json(self):
+        """Преобразуем данные для записи в json - файл"""
+
+        return {
+            "name": self.name,
+            "url": self.url,
+            "pay": self.pay,
+            "requirement": self.requirement}
+
+    def __gt__(self, other):
+        return self.pay > other.pay
 
 
-vacancy = Vacancy()
-print(str(Vacancy.All_vacancies[0].name))
-print(str(Vacancy.All_vacancies[1].name))
+    def __lt__(self, other):
+        return self.pay < other.pay
+
+
+
+
+
+
+
+
+
+
+
