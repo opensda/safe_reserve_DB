@@ -1,3 +1,5 @@
+import os
+
 import requests
 
 from src.classes.hh import JobPlatform
@@ -18,7 +20,8 @@ class SuperJob(JobPlatform):
         :param town: название города
         :return: список словарей с вакансиями
         """
-        api_key = 'v3.r.137697608.f7e337a7ba658714046240826f8b669cf769b285.aa25b4c1fa18e394fa2aa5b8ee94fb1baef25811'
+        api_key = os.getenv("SUPERJOB_API_KEY")
+
 
         def get_data(page=0):
             """
