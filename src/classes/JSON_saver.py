@@ -14,7 +14,7 @@ class JSON_Saver(File_Saver):
 
 
     def save_to_JSON(self, data: list):
-        with open(f'{self.filename}.json', 'w', encoding='utf-8') as file:
+        with open(f'../parced_vacancies/{self.filename} в РФ.json', 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 

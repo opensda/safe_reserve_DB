@@ -48,7 +48,7 @@ class HH(JobPlatform):
             return self.response_json
 
         self.data_store = []
-        for page in range(0, 10):
+        for page in range(0, 1):
             self.content = get_data(page)
             self.data_store.extend(self.content['items'])
             print(f'Загружаются данные с hh.ru: 100 вакансий загружено')

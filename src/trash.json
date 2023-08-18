@@ -1,0 +1,841 @@
+[
+  {
+    'id': '83749203',
+    'premium': False,
+    'name': 'QA Engineer (manual) стажер',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': None,
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': None,
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-07-20T11:54:29+0300',
+    'created_at': '2023-07-20T11:54:29+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=83749203',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/83749203?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/83749203',
+    'relations': [],
+    'employer': {
+      'id': '3998797',
+      'name': 'Айти Крон',
+      'url': 'https://api.hh.ru/employers/3998797',
+      'alternate_url': 'https://hh.ru/employer/3998797',
+      'logo_urls': {
+        'original': 'https://hhcdn.ru/employer-logo-original/897334.png',
+        '90': 'https://hhcdn.ru/employer-logo/4030023.png',
+        '240': 'https://hhcdn.ru/employer-logo/4030024.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=3998797',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Специалистов, которые получили высшее образование в области информационных технологий, но не имеющие (либо минимальный) коммерческий опыт в тестировании. - ',
+      'responsibility': 'Тестировать продукты, которые разрабатывает компания: Мобильные приложения, веб-сервисы. - Быть про-активным, предлагать и защищать свои решения. - Выделяем часть времени...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '124',
+        'name': 'Тестировщик'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'noExperience',
+      'name': 'Нет опыта'
+    },
+    'employment': {
+      'id': 'probation',
+      'name': 'Стажировка'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '84351225',
+    'premium': False,
+    'name': 'Менеджер по сопровождению клиентов',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': {
+      'from': 90000,
+      'to': 100000,
+      'currency': 'RUR',
+      'gross': False
+    },
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'Москва',
+      'street': 'Дмитровское шоссе',
+      'building': '71Б',
+      'lat': 55.856038,
+      'lng': 37.558921,
+      'description': None,
+      'raw': 'Москва, Дмитровское шоссе, 71Б',
+      'metro': {
+        'station_name': 'Верхние Лихоборы',
+        'line_name': 'Люблинско-Дмитровская',
+        'station_id': '10.598',
+        'line_id': '10',
+        'lat': 55.85566,
+        'lng': 37.56282
+      },
+      'metro_stations': [
+        {
+          'station_name': 'Верхние Лихоборы',
+          'line_name': 'Люблинско-Дмитровская',
+          'station_id': '10.598',
+          'line_id': '10',
+          'lat': 55.85566,
+          'lng': 37.56282
+        }
+      ],
+      'id': '2880670'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-01T11:17:33+0300',
+    'created_at': '2023-08-01T11:17:33+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=84351225',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/84351225?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/84351225',
+    'relations': [],
+    'employer': {
+      'id': '2406616',
+      'name': 'Завод ТГИ',
+      'url': 'https://api.hh.ru/employers/2406616',
+      'alternate_url': 'https://hh.ru/employer/2406616',
+      'logo_urls': {
+        '240': 'https://hhcdn.ru/employer-logo/1815435.png',
+        '90': 'https://hhcdn.ru/employer-logo/1815434.png',
+        'original': 'https://hhcdn.ru/employer-logo-original/343292.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=2406616',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Опыт работы в аналогичной должности от 2х лет. Уверенный пользователь ПК, знание программ Microsoft office. Опыт работы с 1...',
+      'responsibility': 'Подготовка документов (договор, спецификаций , доп. соглашений, счетов, актов, официальных писем и пр.) для отгрузки заказчикам в соответствии с условиями контракта . '
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '70',
+        'name': 'Менеджер по продажам, менеджер по работе с клиентами'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '85096491',
+    'premium': False,
+    'name': 'Менеджер Западно-Сибирской дирекции',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '147',
+      'name': 'Ханты-Мансийск',
+      'url': 'https://api.hh.ru/areas/147'
+    },
+    'salary': None,
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'Ханты-Мансийский автономный округ',
+      'street': 'аэропорт Ханты-Мансийск',
+      'building': None,
+      'lat': 61.026144,
+      'lng': 69.095798,
+      'description': None,
+      'raw': 'Ханты-Мансийский автономный округ, аэропорт Ханты-Мансийск',
+      'metro': None,
+      'metro_stations': [],
+      'id': '12716964'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-15T09:56:05+0300',
+    'created_at': '2023-08-15T09:56:05+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=85096491',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/85096491?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/85096491',
+    'relations': [],
+    'employer': {
+      'id': '17713',
+      'name': 'ЮТэйр, Авиакомпания',
+      'url': 'https://api.hh.ru/employers/17713',
+      'alternate_url': 'https://hh.ru/employer/17713',
+      'logo_urls': {
+        'original': 'https://hhcdn.ru/employer-logo-original/939772.png',
+        '240': 'https://hhcdn.ru/employer-logo/4199633.png',
+        '90': 'https://hhcdn.ru/employer-logo/4199632.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=17713',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Высшее образование. Опыт работы в аналогичной сфере приветствуется. Уверенное владение ПК. Умение работать с большим объемом информации и в режиме...',
+      'responsibility': 'Организация вертолетных услуг в зоне ответственности подразделения. Ведение подготовки, создания и исполнения суточного плана полетов. Обеспечение ведения оперативного контроля за...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '88',
+        'name': 'Офис-менеджер'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'noExperience',
+      'name': 'Нет опыта'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '85101391',
+    'premium': False,
+    'name': 'Разработчик Front-end удаленно',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': {
+      'from': 80000,
+      'to': 120000,
+      'currency': 'RUR',
+      'gross': False
+    },
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': None,
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-15T10:43:21+0300',
+    'created_at': '2023-08-15T10:43:21+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=85101391',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/85101391?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/85101391',
+    'relations': [],
+    'employer': {
+      'id': '3101894',
+      'name': 'Библиотека информационных моделей',
+      'url': 'https://api.hh.ru/employers/3101894',
+      'alternate_url': 'https://hh.ru/employer/3101894',
+      'logo_urls': {
+        '90': 'https://hhcdn.ru/employer-logo/3271056.png',
+        '240': 'https://hhcdn.ru/employer-logo/3271057.png',
+        'original': 'https://hhcdn.ru/employer-logo-original/707485.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=3101894',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Отличное знание JavaScript, HTML, CSS. Опыт работы стейт-менеджерами: vuex, pinia. Знание и опыт работы c Vue.js 2, Vue.js 3...',
+      'responsibility': 'Работа в команде над сервисом bimlib.pro. Отчетность. Работа с учетом дедлайнов.'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '96',
+        'name': 'Программист, разработчик'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '85006826',
+    'premium': False,
+    'name': 'Java-разработчик',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '72',
+      'name': 'Пермь',
+      'url': 'https://api.hh.ru/areas/72'
+    },
+    'salary': {
+      'from': 100000,
+      'to': None,
+      'currency': 'RUR',
+      'gross': False
+    },
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': None,
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-14T07:59:40+0300',
+    'created_at': '2023-08-14T07:59:40+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=85006826',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/85006826?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/85006826',
+    'relations': [],
+    'employer': {
+      'id': '2530296',
+      'name': 'ППМТС ПЕРМСНАБСБЫТ',
+      'url': 'https://api.hh.ru/employers/2530296',
+      'alternate_url': 'https://hh.ru/employer/2530296',
+      'logo_urls': {
+        'original': 'https://hhcdn.ru/employer-logo-original/779759.jpg',
+        '240': 'https://hhcdn.ru/employer-logo/3559928.jpeg',
+        '90': 'https://hhcdn.ru/employer-logo/3559927.jpeg'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=2530296',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Имеют высшее техническое образование. Имеют опыт программирования более года на языке C/C++, Java, SQL. Имеют знания ООП (Java Spring...',
+      'responsibility': 'Разрабатывать приложения для дистанционного мониторинга и управления удалёнными устройствами (протоколы связи ModBus RTU и подобные). Разрабатывать клиент-серверные приложения. '
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '96',
+        'name': 'Программист, разработчик'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '84957339',
+    'premium': False,
+    'name': 'Водитель в офис на автомобиль компании',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '3',
+      'name': 'Екатеринбург',
+      'url': 'https://api.hh.ru/areas/3'
+    },
+    'salary': {
+      'from': 40000,
+      'to': None,
+      'currency': 'RUR',
+      'gross': False
+    },
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'Екатеринбург',
+      'street': 'улица Шувакишская',
+      'building': '2',
+      'lat': 56.892561,
+      'lng': 60.504364,
+      'description': None,
+      'raw': 'Екатеринбург, улица Шувакишская, 2',
+      'metro': None,
+      'metro_stations': [],
+      'id': '224658'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-11T16:26:00+0300',
+    'created_at': '2023-08-11T16:26:00+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=84957339',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/84957339?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/84957339',
+    'relations': [],
+    'employer': {
+      'id': '538129',
+      'name': 'Черкашин и партнеръ',
+      'url': 'https://api.hh.ru/employers/538129',
+      'alternate_url': 'https://hh.ru/employer/538129',
+      'logo_urls': {
+        'original': 'https://hhcdn.ru/employer-logo-original/180453.bmp',
+        '240': 'https://hhcdn.ru/employer-logo/432643.png',
+        '90': 'https://hhcdn.ru/employer-logo/359786.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=538129',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Среднее профессиональное образование. Наличие водительского удостоверения категории В,С. Опыт вождения на АКПП и МКП. Внимательность, ответственность, пунктуальность, коммуникабельность.',
+      'responsibility': 'Выполнение задач по доставке и получении документации. Доставка документов и сотрудников между двумя производственными площадками: г. Екатеринбург и г. Полевской. '
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': True,
+    'professional_roles': [
+      {
+        'id': '21',
+        'name': 'Водитель'
+      }
+    ],
+    'accept_incomplete_resumes': True,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '85113061',
+    'premium': False,
+    'name': 'Дизайнер UI UX',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': None,
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': None,
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-15T12:40:50+0300',
+    'created_at': '2023-08-15T12:40:50+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=85113061',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/85113061?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/85113061',
+    'relations': [],
+    'employer': {
+      'id': '4570942',
+      'name': 'PIX Robotics',
+      'url': 'https://api.hh.ru/employers/4570942',
+      'alternate_url': 'https://hh.ru/employer/4570942',
+      'logo_urls': {
+        '240': 'https://hhcdn.ru/employer-logo/5729085.png',
+        '90': 'https://hhcdn.ru/employer-logo/5729084.png',
+        'original': 'https://hhcdn.ru/employer-logo-original/1027079.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=4570942',
+      'accredited_it_employer': True,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Ты владеешь Figma. Плюсом будет знание других графических редакторов. У тебя есть какой-то опыт в UX дизайне: это могут...',
+      'responsibility': 'PIX RPA — программные роботы для решения рутинных задач. PIX BI — система умного анализа данных. PIX Процессы — платформа для организации процессного...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '34',
+        'name': 'Дизайнер, художник'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '83565094',
+    'premium': False,
+    'name': 'Водитель-экспедитор на автомобиль компании (автомобиль домашнего хранения)',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': {
+      'from': None,
+      'to': 120000,
+      'currency': 'RUR',
+      'gross': False
+    },
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'Москва',
+      'street': 'Никулинская улица',
+      'building': '35с1',
+      'lat': 55.67225,
+      'lng': 37.43728,
+      'description': None,
+      'raw': 'Москва, Никулинская улица, 35с1',
+      'metro': {
+        'station_name': 'Озёрная',
+        'line_name': 'Солнцевская',
+        'station_id': '133.608',
+        'line_id': '133',
+        'lat': 55.6698,
+        'lng': 37.4495
+      },
+      'metro_stations': [
+        {
+          'station_name': 'Озёрная',
+          'line_name': 'Солнцевская',
+          'station_id': '133.608',
+          'line_id': '133',
+          'lat': 55.6698,
+          'lng': 37.4495
+        }
+      ],
+      'id': '13315077'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-13T16:10:31+0300',
+    'created_at': '2023-08-13T16:10:31+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=83565094',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/83565094?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/83565094',
+    'relations': [],
+    'employer': {
+      'id': '1298124',
+      'name': 'ТД ЛФБ',
+      'url': 'https://api.hh.ru/employers/1298124',
+      'alternate_url': 'https://hh.ru/employer/1298124',
+      'logo_urls': {
+        'original': 'https://hhcdn.ru/employer-logo-original/1126372.jpg',
+        '90': 'https://hhcdn.ru/employer-logo/6126077.jpeg',
+        '240': 'https://hhcdn.ru/employer-logo/6126078.jpeg'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=1298124',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Водители, обладающие категориями B или С, и опытом управления коммерческим грузовым транспортом. Те, кто добросовестно соблюдают правила дорожного движения. ',
+      'responsibility': 'Доставлять замороженные продукты питания по городам России (командировки в Нижний Новгород, Вологду, Ярославль, Смоленск и т.д.). Обеспечивать сохранность перевозимого...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '21',
+        'name': 'Водитель'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between1And3',
+      'name': 'От 1 года до 3 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '84740970',
+    'premium': False,
+    'name': 'Заместитель финансового директора',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1',
+      'name': 'Москва',
+      'url': 'https://api.hh.ru/areas/1'
+    },
+    'salary': None,
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'Москва',
+      'street': 'Лужнецкая набережная',
+      'building': '10Ас12',
+      'lat': 55.714774,
+      'lng': 37.56874,
+      'description': None,
+      'raw': 'Москва, Лужнецкая набережная, 10Ас12',
+      'metro': {
+        'station_name': 'Воробьевы горы',
+        'line_name': 'Сокольническая',
+        'station_id': '1.165',
+        'line_id': '1',
+        'lat': 55.709169,
+        'lng': 37.557293
+      },
+      'metro_stations': [
+        {
+          'station_name': 'Воробьевы горы',
+          'line_name': 'Сокольническая',
+          'station_id': '1.165',
+          'line_id': '1',
+          'lat': 55.709169,
+          'lng': 37.557293
+        }
+      ],
+      'id': '5506264'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-08T14:32:35+0300',
+    'created_at': '2023-08-08T14:32:35+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=84740970',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/84740970?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/84740970',
+    'relations': [],
+    'employer': {
+      'id': '2742253',
+      'name': 'ТК Магнум Ойл',
+      'url': 'https://api.hh.ru/employers/2742253',
+      'alternate_url': 'https://hh.ru/employer/2742253',
+      'logo_urls': {
+        '240': 'https://hhcdn.ru/employer-logo/2078115.png',
+        '90': 'https://hhcdn.ru/employer-logo/2078114.png',
+        'original': 'https://hhcdn.ru/employer-logo-original/409009.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=2742253',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Опыт работы финансовым менеджером с несколькими ЦФО. Умение составлять прогнозные модели эффективности проектов. Умение работать с большим объёмам информации, контролировать...',
+      'responsibility': 'Ведение и составление управленческой отчетности в полном объеме на основании данных 1С Управленческая база. Формирование основных отчетов Компании - управленческого...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '137',
+        'name': 'Финансовый менеджер'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'between3And6',
+      'name': 'От 3 до 6 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  },
+  {
+    'id': '85021997',
+    'premium': False,
+    'name': 'Начальник отдела ОТ ПБ И ООС- заместитель главного инженера по ПБ',
+    'department': None,
+    'has_test': False,
+    'response_letter_required': False,
+    'area': {
+      'id': '1050',
+      'name': 'Ухта',
+      'url': 'https://api.hh.ru/areas/1050'
+    },
+    'salary': None,
+    'type': {
+      'id': 'open',
+      'name': 'Открытая'
+    },
+    'address': {
+      'city': 'посёлок городского типа Ярега',
+      'street': None,
+      'building': None,
+      'lat': 63.434625,
+      'lng': 53.57759,
+      'description': None,
+      'raw': 'посёлок городского типа Ярега',
+      'metro': None,
+      'metro_stations': [],
+      'id': '852995'
+    },
+    'response_url': None,
+    'sort_point_distance': None,
+    'published_at': '2023-08-14T10:32:51+0300',
+    'created_at': '2023-08-14T10:32:51+0300',
+    'archived': False,
+    'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=85021997',
+    'insider_interview': None,
+    'url': 'https://api.hh.ru/vacancies/85021997?host=hh.ru',
+    'alternate_url': 'https://hh.ru/vacancy/85021997',
+    'relations': [],
+    'employer': {
+      'id': '550628',
+      'name': 'ЛУКОЙЛ-Коми',
+      'url': 'https://api.hh.ru/employers/550628',
+      'alternate_url': 'https://hh.ru/employer/550628',
+      'logo_urls': {
+        '90': 'https://hhcdn.ru/employer-logo/362495.png',
+        'original': 'https://hhcdn.ru/employer-logo-original/177617.gif',
+        '240': 'https://hhcdn.ru/employer-logo/435352.png'
+      },
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=550628',
+      'accredited_it_employer': False,
+      'trusted': True
+    },
+    'snippet': {
+      'requirement': 'Высшее профессиональное ( техническое) образование и переподготовка в области промышленной безопасности и охраны труда. Стаж работы по направлению деятельности на итр...',
+      'responsibility': 'Обязанности: 1. Осуществляет руководство отделом. Организует и координирует работу по охране труда в организации. Определяет и систематически корректирует направления развития...'
+    },
+    'contacts': None,
+    'schedule': None,
+    'working_days': [],
+    'working_time_intervals': [],
+    'working_time_modes': [],
+    'accept_temporary': False,
+    'professional_roles': [
+      {
+        'id': '40',
+        'name': 'Другое'
+      }
+    ],
+    'accept_incomplete_resumes': False,
+    'experience': {
+      'id': 'moreThan6',
+      'name': 'Более 6 лет'
+    },
+    'employment': {
+      'id': 'full',
+      'name': 'Полная занятость'
+    },
+    'adv_response_url': None,
+    'is_adv_vacancy': False
+  }
+]
